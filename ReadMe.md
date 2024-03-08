@@ -1,5 +1,7 @@
 ## 简介
 
+油管：[绵阿羊](https://www.youtube.com/channel/UC9xYHJIRj7oXTPYYrTv2U2A)
+
 ## 注意事项
 
 套上warp可绕过chromego封锁的网站（P，X）
@@ -17,7 +19,7 @@
 
 [warp+机器人](https://t.me/generatewarpplusbot)
 
-然后本地创建一个yaml文件，参考：[issues #20](https://github.com/vveg26/chromego_merge/issues/20)
+然后本地创建一个yaml文件，参考：[issues #20](https://github.com/mianayang/chromego_merge/issues/20)
 
 </details>
 
@@ -41,8 +43,9 @@ https://mareep.netlify.app/sub/shadowrocket_base64.txt
 ### sing-box订阅链接（1.8.0以上）
 
 ```
-https://sing-box-subscribe.vercel.app/config/https:/mareep.netlify.app/sub/merged_proxies_new.yaml
+https://mareep.netlify.app/sub/sb.json
 ```
+
 
 ## 客户端推荐
 ### Windows
@@ -64,6 +67,8 @@ https://sing-box-subscribe.vercel.app/config/https:/mareep.netlify.app/sub/merge
 - [Alvin9999](https://github.com/Alvin9999/pac2/tree/master)
 - [sing-box-subscribe](https://github.com/Toperlock/sing-box-subscribe)
 
+区域设置代码截取自:
+- [chromegopacs](https://github.com/markbang/chromegopacs)
 
 
 

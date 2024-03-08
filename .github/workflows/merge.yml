@@ -28,11 +28,18 @@ jobs:
 
       - name: Run shadowrocket merge script
         run: python merge.py  
+      - name: Run sb script
+        run: python sb.py  
       - name: Commit Changes
         run: |
-          git config core.ignorecase false
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          if [[ -n "$(git status --porcelain)" ]]; then
+            echo "Changes detected in the repository."
+            git config core.ignorecase false
+            git config --local user.email "actions@github.com"
+            git config --local user.name "GitHub Action"
+            git add .
+            git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes detected in the repository."
+          fi
